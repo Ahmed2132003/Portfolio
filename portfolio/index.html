@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Ibrahim — Full Stack Developer</title>
+  <meta name="description" content="Full Stack Developer specializing in Python, Django, React, and scalable SaaS platforms.">
+  <meta name="keywords" content="Full Stack Developer, Python, Django, React, SaaS, Ismailia, Egypt">
+  <meta property="og:title" content="Ahmed Ibrahim — Full Stack Developer">
+  <meta property="og:description" content="Self-taught Full Stack Developer building scalable systems and real-world platforms.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║         NAVBAR               ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Ahmed<span>.</span></a>
+      <div class="nav-links" id="nav-links"><!-- JS fills this --></div>
+      <button class="nav-hamburger" id="nav-hamburger" onclick="
+        this.classList.toggle('open');
+        document.getElementById('nav-mobile').classList.toggle('open');">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav-mobile" id="nav-mobile">
+    <div id="nav-mobile-links"><!-- JS fills this --></div>
+  </div>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║           HOME               ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <section id="home">
+    <div class="container">
+      <div class="hero-content" id="hero-content"><!-- JS fills this --></div>
+    </div>
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║           ABOUT              ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text reveal" id="about-text"><!-- JS fills this --></div>
+        <div class="about-meta reveal" id="about-meta"><!-- JS fills this --></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║           SKILLS             ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-label">Skills</div>
+      <h2 class="section-title">What I Work With</h2>
+      <p class="section-desc">Technologies and tools I use to build robust, scalable applications.</p>
+      <div class="skills-grid" id="skills-grid"><!-- JS fills this --></div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║          PROJECTS            ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">What I've Built</h2>
+      <p class="section-desc">Real-world systems and platforms shipped for clients and personal projects.</p>
+      <div id="projects-filter" class="projects-filter"><!-- JS fills this --></div>
+      <div class="projects-grid" id="projects-grid"><!-- JS fills this --></div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║             CV               ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <section id="cv" class="section">
+    <div class="container">
+      <div class="section-label">Curriculum Vitae</div>
+      <h2 class="section-title">My Resume</h2>
+      <p class="section-desc">A complete overview of my experience, skills, and education.</p>
+      <div id="cv-content" class="reveal"><!-- JS fills this --></div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║          CONTACT             ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="section-desc">Have a project in mind? Let's talk about it.</p>
+      <div class="contact-grid">
+        <div class="contact-info reveal" id="contact-info"><!-- JS fills this --></div>
+        <div class="reveal" id="contact-form-wrap"><!-- JS fills this --></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║           FOOTER             ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-copy">© 2025 <span id="footer-name"></span>. Built with 💙</div>
+      <div class="footer-links">
+        <a href="#" id="footer-github" target="_blank">GitHub</a>
+        <a href="#" id="footer-linkedin" target="_blank">LinkedIn</a>
+        <a href="#" id="footer-email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══ DATA FILES (edit these to update content) ══ -->
+  <script src="data/profile.js"></script>
+  <script src="data/skills.js"></script>
+  <script src="data/projects.js"></script>
+
+  <!-- ══ APP ══ -->
+  <script src="js/app.js"></script>
+
+  <!-- ══ ADMIN PANEL ══ -->
+  <script src="js/admin.js"></script>
+
+</body>
+</html>
